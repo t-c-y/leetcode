@@ -70,6 +70,7 @@ public class Leetcode1 {
     public static void main(String[] args) {
         int[] nums = {2, 7, 11, 15};
         int target = 9;
+        // 新的方法更快更节省内存
         int[] reult = twoSumNew(nums, target);
 //        int[] reult = twoSum(nums, target);
         System.out.println("["+reult[0]+","+reult[1]+"]");
