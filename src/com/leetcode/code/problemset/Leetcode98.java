@@ -45,8 +45,9 @@ public class Leetcode98 {
     }
 
     public static boolean helper(TreeNode root, Integer l, Integer h) {
-        if(root == null)
+        if(root == null) {
             return true;
+        }
         int val = root.val;
         if(l != null && val <= l) {
             return false;
