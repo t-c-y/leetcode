@@ -17,6 +17,9 @@ public class Leetcode598 {
      *  /\
      * 5 6
      * 返回其前序遍历: [1,3,5,6,2,4]。
+     *
+     * 解题思路：https://blog.csdn.net/tcy1429920627/article/details/109510462
+     *
      */
 
     private static List<Integer> res = new ArrayList<>();

@@ -24,6 +24,9 @@ public class Leetcode104 {
      * 来源：力扣（LeetCode）
      * 链接：https://leetcode-cn.com/problems/maximum-depth-of-binary-tree
      * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     *
+     * 解题思路：https://blog.csdn.net/tcy1429920627/article/details/109542952
+     *
      */
 
     public static int maxDepth(TreeNode root) {
