@@ -46,16 +46,20 @@ public class Leetcode990 {
 
     public static boolean equationsPossible(String[] equations) {
         if (equations.length > 0) {
+            // 26 个英文字母
             UnionFind uf = new UnionFind(26);
+            // 先让相等的字母形成连通分量
             for (String eq : equations) {
                 if (eq.charAt(1) == '=') {
                     uf.union(eq.charAt(0) - 'a', eq.charAt(3) - 'a');
                 }
             }
+            // 检查不等关系是否打破相等关系的连通性
             for (String eq : equations) {
                 if (eq.charAt(1) == '!') {
                     boolean isConnected = uf.connected(
                             eq.charAt(0) - 'a', eq.charAt(3) - 'a');
+                    // 如果相等关系成立，就是逻辑冲突
                     if (isConnected) {
                         return false;
                     }
