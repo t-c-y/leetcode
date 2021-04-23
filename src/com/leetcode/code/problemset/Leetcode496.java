@@ -97,12 +97,6 @@ public class Leetcode496 {
         System.out.println("nums = " + Arrays.toString(
                 solution.nextGreaterElement(nums1, nums2)));
 
-        Stack<Integer> s = new Stack<>();
-        s.push(1);
-        s.push(2);
-        System.out.println("s.peek() = " + s.peek());
-        s.push(3);
-        System.out.println("s.pop() = " + s.pop());
 
     }
 
